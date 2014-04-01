@@ -7,7 +7,7 @@
    (the "License"); you may not use this file except in compliance with
    the License.  You may obtain a copy of the License at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,25 +15,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<!DOCTYPE html>
-<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<wicket:panel xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Karaf WebConsole</title>
-</head>
+    <ul class="nav nav-tabs">
+        <li wicket:id="moduleLinks">
+            <a wicket:id="link">
+                <span wicket:id="label"></span>
+            </a>
+        </li>
+    </ul>
 
-<body>
-    <div class="container">
-
-        <div wicket:id="header"></div>
-
-        <div wicket:id="top"></div>
-
-        <wicket:child />
-
-        <div wicket:id="footer">Footer</div>
-
-    </div>
-</body>
-</html>
+</wicket:panel>

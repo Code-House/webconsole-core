@@ -16,8 +16,8 @@
  */
 package org.webconsole.ui.pages;
 
-import org.apache.wicket.markup.html.panel.EmptyPanel;
 import org.apache.wicket.markup.html.panel.Panel;
+import org.webconsole.ui.component.NavigationPanel;
 
 /**
  * Page which requires admin role, in other words authorized user.
@@ -28,7 +28,7 @@ public class SecuredPage extends BasePage {
 
     @Override
     protected Panel createTopPanel(String id) {
-        return new EmptyPanel(id);// new NavigationTopPanel(id, getSupportedLocales());
+        return new NavigationPanel(id);
     }
 
 }

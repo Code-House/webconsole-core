@@ -40,7 +40,7 @@ public class BasePage extends WebPage {
 
     public BasePage() {
         add(brandProvider.getHeader("header"));
-
+        add(createTopPanel("top"));
         add(brandProvider.getFooter("footer"));
 
         for (Behavior behavior : brandProvider.getBehaviors()) {
