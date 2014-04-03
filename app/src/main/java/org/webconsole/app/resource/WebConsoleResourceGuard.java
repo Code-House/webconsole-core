@@ -6,6 +6,10 @@ public class WebConsoleResourceGuard extends SecurePackageResourceGuard {
 
     public WebConsoleResourceGuard() {
         addPattern("+*.map");
+        addPattern("+*.eot");
+        addPattern("+*.svg");
+        addPattern("+*.ttf");
+        addPattern("+*.woff");
     }
 
 }
